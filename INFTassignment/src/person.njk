@@ -1,0 +1,21 @@
+---
+pagination:
+  data: people
+  size: 3
+  alias: person
+layout: layouts/default.njk
+title: sample testing 
+---
+<h1>{{ title }}</h1>
+
+
+{% for person in pagination.items %}
+<p>
+    <strong> Hello my name is {{ person.first_name }}</strong>
+</p>
+
+{% endfor %}
+
+
+<hr>
+
