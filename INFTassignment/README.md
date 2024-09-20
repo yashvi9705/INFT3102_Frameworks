@@ -14,7 +14,7 @@ Hello!! my name is Yashvi and this is my assignment 1 for INFT3102 class.
 
 #### to check if you have both of it on you system run the following command: 
 - node -v
-- pnm -v 
+- npm -v 
 
 #### to get started after this clone the repository onto your device and install the  required node.js dependencies by writing ***npm install*** . This will install all teh dependencies in the package.json file.
 
