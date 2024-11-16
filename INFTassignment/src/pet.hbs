@@ -1,0 +1,44 @@
+---
+pagination:
+  data: pets
+  size: 4
+  page: 1   
+  alias: pet
+layout: layouts/default.hbs
+title: Pet's List
+---
+
+<div class="text-center my-5">
+    <h1 class="page-title">{{ title }}</h1>
+    <p class="page-subtitle">Meet these wonderful pets, including those who have found their forever homes!</p>
+</div>
+
+<div class="row">
+    {{#each pagination.items as |pet|}}
+      <div class="col-md-3">
+        <div class="card mb-4">
+          <img src="{{ pet.photo_url }}" class="card-img-top img-square" alt="{{ pet.name }}">
+          <div class="card-body">
+            <h5 class="card-title">{{ pet.name }}</h5>
+            <p class="card-text">
+              <strong>Type:</strong> {{ pet.type }}<br>
+              <strong>Breed:</strong> {{ pet.breed }}<br>
+              <strong>Age:</strong> {{ pet.age }}<br>
+              <strong>Color:</strong> {{ pet.color }}<br>
+              <strong>Weight:</strong> {{ pet.weight }} kg<br>
+              <strong>Owner:</strong> {{ pet.owner_name }}<br>
+              <strong>Contact:</strong> {{ pet.owner_contact }}
+              <strong>Adopted:</strong> {{#if pet.adopted}}Yes <br>{{else}}No{{/if}}
+              {{#if pet.adopted}}<strong>Adoption Date:</strong> {{ pet.adoption_date }}{{/if}} <br>
+              <strong>Notes:</strong> {{ pet.notes }}
+            </p>
+          </div>
+        </div>
+      </div>
+    {{/each}}
+</div>
+
+
+{{> pagination }}
+
+

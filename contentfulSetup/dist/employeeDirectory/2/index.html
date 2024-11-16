@@ -1,0 +1,268 @@
+
+  <div class="header">
+    <!doctype html>
+    <html lang="en">
+      <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Employee&#x27;s List</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/index.css">
+      </head>
+      <body>
+    
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary navbarScroll" data-bs-theme="dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="/">Yashvi Patel</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="/">Home</a>
+                </li>
+        
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="/employeeDirectory">Employee Directory</a>
+                </li>
+    
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="/contentfulsample">Contentful</a>
+                </li>
+    
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="/about">About Me</a>
+                </li>
+        
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    LAB 1
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="/Lab1/Lab1_Instructions/">Instructions</a></li>
+                    <li><a class="dropdown-item" href="/Lab1/lab1_Deliverable/">Deliverable</a></li>
+                    <li><a class="dropdown-item" href="/Lab1/assignment1_instructions/">Assignment 1 instructions</a></li>
+                  </ul>
+                </li>
+    
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    LAB 2
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="/Lab2/Lab2_Deliverable/">Deliverable</a></li>
+                  </ul>
+                </li>
+    
+              </ul>
+            </div>
+          </div>
+        </nav>
+    
+        <script>
+            const header = document.querySelector('.navbar');
+    
+        window.onscroll = function() {
+            var top = window.scrollY;
+            if(top >=100) {
+                header.classList.add('navbarDark');
+            }
+            else {
+                header.classList.remove('navbarDark');
+            }
+        }
+        </script>
+    </header>  </div>
+
+  <div id="main">
+    
+<div class="text-center my-5">
+    <h1 class="page-title">Employee&#x27;s List</h1>
+    <p class="page-subtitle">Meet these wonderful pets, including those who have found their forever homes!</p>
+</div>
+
+
+    <div class="row">
+      
+
+      <!-- Sort Buttons -->
+<div class="sort-buttons mb-3">
+  <button id="sort-by-department" class="btn btn-primary">Sort by Department</button>
+</div>
+
+<!-- Department Container (Initially Displayed) -->
+<div id="department-container" class="mt-4" style="display: none;">
+      <div>
+        <h2>Business Analysis</h2>
+        <ul>
+          <li>
+            <strong>George White</strong> - Business Analyst
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h2>Data Science</h2>
+        <ul>
+          <li>
+            <strong>Evan Taylor</strong> - Data Scientist
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h2>Engineering</h2>
+        <ul>
+          <li>
+            <strong>Alice Johnson</strong> - Software Engineer
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h2>Finance</h2>
+        <ul>
+          <li>
+            <strong>Ian Wright</strong> - Financial Analyst
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h2>Finance</h2>
+        <ul>
+          <li>
+            <strong>andrew patel</strong> - Financial Analyst
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h2>It</h2>
+        <ul>
+          <li>
+            <strong>yashvi mekhail</strong> - software developer
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h2>Marketing</h2>
+        <ul>
+          <li>
+            <strong>Fiona Wang</strong> - Marketing Specialist
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h2>Product</h2>
+        <ul>
+          <li>
+            <strong>Bob Smith</strong> - Product Manager
+          </li>
+        </ul>
+      </div>
+</div>
+
+
+
+
+
+
+      <div class="col-md-4">
+        <a href="/" class="card-link">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title">yashvi mekhail</h5>
+              <img class="img-square2 " src="https://images.ctfassets.net/34t0du164oj9/6ATmSP0zZru6WQItY1wBH9/a563aa44fe62ced3e80ffd45c630f601/___2_.jpeg" alt="" />
+                <strong>ID:</strong> 100044<br>
+                <strong>Age :</strong> 23<br>
+                <strong>Email Address:</strong> and.wright@example.com<br>
+                <strong>Contact Number:</strong> <br>
+                <strong>Position:</strong> software developer<br>
+                <strong>Department:</strong> It<br>
+                <strong>Location of Work:</strong> Atlanta<br>
+                <strong>Years of Exp:</strong> 9<br>
+                <strong>Employment Date:</strong> January 06, 2018<br>
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="/" class="card-link">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title">andrew patel</h5>
+              <img class="img-square2 " src="https://images.ctfassets.net/34t0du164oj9/6ATmSP0zZru6WQItY1wBH9/a563aa44fe62ced3e80ffd45c630f601/___2_.jpeg" alt="" />
+                <strong>ID:</strong> 100041<br>
+                <strong>Age :</strong> 23<br>
+                <strong>Email Address:</strong> and.wright@example.com<br>
+                <strong>Contact Number:</strong> <br>
+                <strong>Position:</strong> Financial Analyst<br>
+                <strong>Department:</strong> Finance<br>
+                <strong>Location of Work:</strong> Atlanta<br>
+                <strong>Years of Exp:</strong> 9<br>
+                <strong>Employment Date:</strong> January 06, 2018<br>
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="/" class="card-link">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title">Bob Smith</h5>
+              <img class="img-square2 " src="https://images.ctfassets.net/34t0du164oj9/6ATmSP0zZru6WQItY1wBH9/a563aa44fe62ced3e80ffd45c630f601/___2_.jpeg" alt="" />
+                <strong>ID:</strong> 100033<br>
+                <strong>Age :</strong> 34<br>
+                <strong>Email Address:</strong> bob.smith@example.com<br>
+                <strong>Contact Number:</strong> <br>
+                <strong>Position:</strong> Product Manager<br>
+                <strong>Department:</strong> Product<br>
+                <strong>Location of Work:</strong> San Francisco<br>
+                <strong>Years of Exp:</strong> 10<br>
+                <strong>Employment Date:</strong> February 28, 2017<br>
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+</div>
+
+<script>
+  // JavaScript for Button-based Sorting
+  document.getElementById('sort-by-department').addEventListener('click', function() {
+    document.getElementById('department-container').style.display = 'block';
+  });
+
+</script>
+
+[object Object]
+
+
+
+  </div>
+
+    <footer class="text-center mt-3 footer">
+        <p>&copy; Yashvi Patel <span id="year"></span></p>
+        <span class="list-inline social-icons">
+            <span class="p-2 text-center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" height="20px" width="20px"> 
+                <a href="https://github.com/yashvi9705" target="_blank">GitHub</a>
+            </span>
+            <span class="p-2 text-center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" height="20px" width="20px"> 
+                <a href="https://www.linkedin.com/in/yashvi-patel-76014b261/" target="_blank">LinkedIn</a>
+            </span>
+            <span class="p-2 text-center"><img src="/img/TermsandCondition.png" height="20px" width="20px"> 
+                <a href="/TermsandCondition/" target="_blank">Terms and Conditions</a>
+            </span>    
+        </span>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+      </body>
+    </html>
+    
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+    
+
+    
